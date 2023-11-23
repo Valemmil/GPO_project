@@ -1,17 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>Home</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="{% static "css/nicepage.css" %}" media="screen">
+    <link rel="stylesheet" href="{% static "css/Home.css" %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static "js/jquery.js" %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static "js/nicepage.js" %}" defer=""></script>
     <meta name="generator" content="Nicepage 5.21.3, nicepage.com">
     
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
     
@@ -26,50 +26,53 @@
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="true" class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-bcb5 u-header" id="sec-6d74"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="Log-in.html" class="u-align-center u-border-3 u-border-white u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-custom-color-3 u-none u-radius-50 u-text-active-white u-text-hover-white u-text-white u-btn-1">Войти<br>
+  <body data-path-to-root="./" data-include-products="true" class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-bcb5 u-header" id="sec-6d74">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/login" class="u-align-center u-border-3 u-border-white u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-custom-color-3 u-none u-radius-50 u-text-active-white u-text-hover-white u-text-white u-btn-1">Войти<br>
         </a>
-        <img class="u-image u-image-contain u-image-default u-image-1" src="images/14.png" alt="" data-image-width="316" data-image-height="65">
+        <img class="u-image u-image-contain u-image-default u-image-1" src="{% static "img/14.png" %}" alt="" data-image-width="316" data-image-height="65">
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <a href="Home.html" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-2"> Главная</a>
+                <a href="/" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-2"> Главная</a>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <a href="Home.html#about" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-3">О нас</a>
+                <a href="/#about" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-3">О нас</a>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <a href="Home.html#table" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-4">Рейтинг<br>
+                <a href="/#table" class="u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-alt-color u-text-hover-custom-color-3 u-btn-4">Рейтинг<br>
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </div></header>
+      </div>
+    </header>
     <section class="u-clearfix u-white u-section-1" id="about">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/Group3.svg" alt="" data-image-width="1040" data-image-height="990">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="images/Group3.svg" alt="" data-image-width="1040" data-image-height="990">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="{% static "img/Group3.svg" %}" alt="" data-image-width="1040" data-image-height="990">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="{% static "img/Group3.svg" %}" alt="" data-image-width="1040" data-image-height="990">
         <h3 class="u-custom-font u-font-montserrat u-text u-text-custom-color-2 u-text-1"> Все Ваши достижения<br>в одном месте!
         </h3>
         <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-2 u-text-2"> Мы - это современное веб-приложение, которое предоставляет возможность хранить достижения студентов в различных сферах студенческой жизни и формировать рейтинговые списки на их основе. Наша цель - поддержать и вдохновить студентов, отмечая их успехи и заслуги</p>
         <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-2 u-text-3">Добро пожаловать в мир студенческих достижений!</p>
         <a href="https://nicepage.com/website-design" class="u-btn u-btn-round u-button-style u-custom-color-1 u-custom-font u-font-montserrat u-hover-custom-color-3 u-radius-50 u-btn-1"> Загрузить достижения</a>
-        <img class="u-image u-image-contain u-image-default u-image-3" src="images/FreeTiltedMacBookAir13MockupPSD1.png" alt="" data-image-width="733" data-image-height="587">
-        <img class="u-image u-image-contain u-image-default u-image-4" src="images/pngwing3.png" alt="" data-image-width="472" data-image-height="534">
+        <img class="u-image u-image-contain u-image-default u-image-3" src="{% static "img/FreeTiltedMacBookAir13MockupPSD1.png" %}" alt="" data-image-width="733" data-image-height="587">
+        <img class="u-image u-image-contain u-image-default u-image-4" src="{% static "img/pngwing3.png" %}" alt="" data-image-width="472" data-image-height="534">
       </div>
     </section>
     <section class="u-clearfix u-section-2" id="table">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/Group3.svg" alt="" data-image-width="1040" data-image-height="990">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="images/Group3.svg" alt="" data-image-width="1040" data-image-height="990">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="{% static "img/Group3.svg" %}" alt="" data-image-width="1040" data-image-height="990">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="{% static "img/Group3.svg" %}" alt="" data-image-width="1040" data-image-height="990">
         <div class="table_background u-container-align-center u-container-style u-group u-radius-15 u-shape-round u-white u-group-1">
-          <div class="u-container-layout u-valign-bottom u-container-layout-1">
+          <div class="u-container-layout u-valign-bottom u-container-layout-1" style="width: auto;">
             <div class="u-expanded-width u-table u-table-responsive u-table-1">
               <table class="u-table-entity u-table-entity-1">
                 <colgroup>
